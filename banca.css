@@ -1,0 +1,113 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #wave{
+        position:fixed;
+        height: 50%;
+        z-index: -1;
+    }
+
+    #container{
+        position: absolute;
+        top:23%;
+        left: 13rem;
+    }
+
+    #bank-img{
+        height: 24rem;
+        position: absolute;
+        right: 11rem;
+        top: 15rem;
+    }
+
+    form{
+        width: 22rem;
+    }
+
+    form input{
+        margin: 1rem 0;
+        padding: 5px 0;
+        width: 19rem;
+        height: 2.8rem;
+        padding-left: 10px;
+        border-radius: 10px
+    }
+
+    
+    #depositar-icon{
+        color:#0090b5;
+        vertical-align: middle;
+    }
+
+    #retirar-icon{
+        color:#0090b5;
+        vertical-align: middle;
+    }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+button{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin:1rem 0;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: #5acae7;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 4rem;
+}
+
+#deposito-h5{
+    padding-top: 1.5rem;
+}
+button:hover{
+    background-color: #88d9ed;
+}
+
+
+@media screen and (max-width: 1000px){
+    form{
+        width: 290px;
+    }
+
+    #bank-img{
+        width: 400px;
+    }
+
+    form input{
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    #bank-img{
+        display: none;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    #wave{
+        display: none;
+    }
+
+    form input{
+        width: 15rem;
+    }
+}
+    

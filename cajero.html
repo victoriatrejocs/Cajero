@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="cajero.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="icon" href="money2.svg" type="image/x-icon"/>
+    <title>Bienvenid@ a la banca electrónica</title>
+</head>
+<body>
+    <img id="wave" src="wave.svg">
+    <div class="container">
+            <img id="bank-img" src="bank1.svg">
+        <div id="login-container" class="login-container">
+            <form>
+                <img id="avatar-img" src="avatar.svg">
+                <h2>BIENVENID@</h2>
+                    <span id= "avatar-icon"class="material-symbols-outlined"> person</span>
+                <input class= "input-cuenta" type="number" id="numeroCuenta" placeholder="Número de cuenta">
+            <span id="error"></span>
+            <span id="password-icon"class="material-symbols-outlined"> lock </span>
+            <input  class= "input-contraseña"type="password" id="contraseña" placeholder="Contraseña">
+            <span id="error"></span>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <button onclick="login()">INGRESAR</button>
+            </form>
+        </div>  
+    </div>
+    <div id="banca" class="bancaOculta">
+        <h1 id="welcome"></h1>
+    </div>
+
+    <script src="cajero.js"></script>
+</body>
+</html>

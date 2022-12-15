@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="banca.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="icon" href="money.svg" type="image/x-icon"/>
+    <title>Bienvenida a la banca electrónica</title>
+</head>
+<body>
+    <h1 id="welcome"></h1>
+    <img id="wave" src="wave2.svg">
+    <img id="bank-img" src="bank3.svg">
+    <div id="container"> 
+        <h3>Tu balance es:</h3>
+        <h3 id="balance"></h3>
+        <form>
+            <h4 id="deposito-h5">Realizar un depósito</h4>
+    <i id= "depositar-icon" class="fa-solid fa-piggy-bank fa-2xl"></i>
+    <input type="number" id="depositar" placeholder="$">
+    <button onclick="depositar()">Depositar</button>
+    <h4>Realizar un retiro</h4>
+    <i id= "retirar-icon" class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
+    <input type="number" name="" id="retirar" placeholder="$">
+    <button onclick="retirar()">Retirar</button>
+        </form>
+</div>
+
+    <script src="https://kit.fontawesome.com/938ee9b587.js" crossorigin="anonymous"></script>
+    <script src="banca.js"></script>
+</body>
+</html>
